@@ -1,0 +1,9 @@
+# Editor directories
+.idea/
+.vscode/
+
+# macOS system files
+.DS_Store
+
+# Python cache files
+__pycache__/
