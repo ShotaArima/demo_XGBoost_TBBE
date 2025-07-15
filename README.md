@@ -1,5 +1,27 @@
-# XGBoost_TBBE
+# XGBoost_TBBEのコピーリポジトリ
+- コピー元 : [ChawinT/XGBoost_TBBE](https://github.com/ChawinT/XGBoost_TBBE/tree/main)
 
+## 変更点
+- `uv`によるパッケージ管理の導入
+- DevContainer化したことで簡単にコンテナを開始することができる
+
+## 起動方法
+### 前提
+- DockerとVScodeをインストールした状態を設定して下さい
+
+### 起動
+- このリポジトリを`git clone ~~`する
+- VSCodeでクローンしたローカルリポジトリを開く
+- VScodeの左下にある「><」のマークをクリック
+- 「コンテナで再度開く」をクリック
+- 開発コンテナに入ることができる
+
+## 終了時
+- VScodeの左下にある「><」のマークをクリック
+- 「ローカルでフォルダを再度開く」をクリック
+- 自分自身のPCに戻ることができる
+
+## 以下はもとのリポジトリのREADME
 ### This is code for A XGBoost-Agent Based model in In-Play Betting on a Sports Betting Exchange dissertation 
 
 It is the extended version from Multi-threaded BBE (Bristol Betting Exchange) integrated with Opinion Dynamics Platform (https://github.com/Guzelyte/TBBE_OD). 
