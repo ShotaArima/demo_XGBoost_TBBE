@@ -1,5 +1,49 @@
-# XGBoost_TBBE
+# XGBoost_TBBEのコピーリポジトリ
+- コピー元 : [ChawinT/XGBoost_TBBE](https://github.com/ChawinT/XGBoost_TBBE/tree/main)
 
+## 変更点
+- `uv`によるパッケージ管理の導入
+- DevContainer化したことで簡単にコンテナを開始することができる
+
+## 起動方法
+### 前提
+- DockerとVScodeをインストールした状態を設定して下さい
+
+### 起動
+- このリポジトリを`git clone ~~`する
+- VSCodeでクローンしたローカルリポジトリを開く
+- VScodeの左下にある「><」のマークをクリック
+- 「コンテナで再度開く」をクリック
+- 開発コンテナに入ることができる
+
+## 終了時
+- VScodeの左下にある「><」のマークをクリック
+- 「ローカルでフォルダを再度開く」をクリック
+- 自分自身のPCに戻ることができる
+
+## 実行方法
+```bash
+$ uv run 〇〇.py 
+```
+
+- 今までは、`python 〇〇.py`で実行できたが、今回は`uv run 〇〇.py`で実行可能
+
+- 試しに以下のコマンドを実行し、pythonが動くかどうか確認してください
+```bash
+$ uv run main.py
+
+Hello World
+```
+
+## ライブラリの追加方法
+- ライブラリを追加する際は、`pip install ~~`ではなく、`uv add ~~`で追加してください
+```bash
+$ uv add ~~~
+# 例 
+# $ uv add pandas
+```
+
+## 以下はもとのリポジトリのREADME
 ### This is code for A XGBoost-Agent Based model in In-Play Betting on a Sports Betting Exchange dissertation 
 
 It is the extended version from Multi-threaded BBE (Bristol Betting Exchange) integrated with Opinion Dynamics Platform (https://github.com/Guzelyte/TBBE_OD). 
