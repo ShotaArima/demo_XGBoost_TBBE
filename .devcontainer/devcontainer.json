@@ -6,7 +6,7 @@
   // 「ホストのローカルワークスペース」を /app/ にバインド
   "workspaceMount": "source=${localWorkspaceFolder},target=/app/,type=bind,consistency=cached",
   // VS Code が開くワークスペースをコンテナ内の /app/ に
-  "workspaceFolder": "/app/",
+  "workspaceFolder": "/app/src/",
   "customizations": {
     "vscode": {
       "settings": {
