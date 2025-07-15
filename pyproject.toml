@@ -1,0 +1,22 @@
+# pyproject.toml
+[project]
+name = "copy_XGBoost_TBBE"
+version = "0.1.0"
+requires-python = ">=3.8"
+dependencies = [
+    "pandas",
+    "xgboost>=2.1.4",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"] # これが重要！ src ディレクトリ内のみをパッケージの探索対象とします。
+
+# `uv run` で直接スクリプトを実行できるように、スクリプトのエントリーポイントを定義できます
+[project.scripts]
+session-stats = "Application.session_stats:main" # main関数がある場合
+# もし `session_stats.py` に `main` 関数がない場合は、以下のように直接モジュールを指定します
+# session-stats = "Application.session_stats"
