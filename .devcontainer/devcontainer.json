@@ -1,0 +1,37 @@
+{
+  "name": "Dev Container XGBoost_TBBE",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  // 「ホストのローカルワークスペース」を /app/src にバインド
+  "workspaceMount": "source=${localWorkspaceFolder}/TBBE_OD_XGboost,target=/app/src/,type=bind,consistency=cached",
+  // VS Code が開くワークスペースをコンテナ内の /app/src/ に
+  "workspaceFolder": "/app/src/",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      },
+      "extensions": [
+        "ms-python.python",
+        "ms-python.debugpy",
+        "kevinrose.vsc-python-indent",
+        "ms-vscode-remote.remote-containers",
+        "ms-toolsai.jupyter",
+      ]
+    },
+    "jetbrains" : {
+        "extensions": [
+            "Python",
+            "Jupyter",
+            "Docker",
+            "GitToolBox",
+            "Markdown",
+            "Rainbow Brackets",
+            "Rainbow CSV",
+            "String Manipulation"
+        ]
+    },
+  },
+  "postCreateCommand": "uv --version"
+}
