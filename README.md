@@ -21,6 +21,28 @@
 - 「ローカルでフォルダを再度開く」をクリック
 - 自分自身のPCに戻ることができる
 
+## 実行方法
+```bash
+$ uv run 〇〇.py 
+```
+
+- 今までは、`python 〇〇.py`で実行できたが、今回は`uv run 〇〇.py`で実行可能
+
+- 試しに以下のコマンドを実行し、pythonが動くかどうか確認してください
+```bash
+$ uv run main.py
+
+Hello World
+```
+
+## ライブラリの追加方法
+- ライブラリを追加する際は、`pip install ~~`ではなく、`uv add ~~`で追加してください
+```bash
+$ uv add ~~~
+# 例 
+# $ uv add pandas
+```
+
 ## 以下はもとのリポジトリのREADME
 ### This is code for A XGBoost-Agent Based model in In-Play Betting on a Sports Betting Exchange dissertation 
 
